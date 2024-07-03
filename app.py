@@ -68,7 +68,7 @@ def login():
     return render_template('login.html')
 
 @app.route('/logout')
-@login_required
+
 def logout():
     logout_user()
     flash('You have been logged out')
@@ -96,7 +96,7 @@ def upload_file():
     return render_template('upload.html')
 
 @app.route('/visualize')
-@login_required
+
 def visualize_data():
     # Implement data visualization logic here
     return render_template('visualize.html')
